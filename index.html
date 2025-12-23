@@ -1,120 +1,164 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV | Imam Zainal Mahdi</title>
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
-    margin: 0;
-    padding: 0;
-}
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-h1 {
-    margin-bottom: 5px;
-}
-h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-top: 30px;
-}
-.role {
-    color: #555;
-    font-weight: bold;
-}
-.job {
-    margin-bottom: 15px;
-}
-.job-title {
-    font-weight: bold;
-}
-.year {
-    color: #777;
-    font-size: 14px;
-}
-ul {
-    padding-left: 20px;
-}
-footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #777;
-    font-size: 14px;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>CV – Imam Zainal Mahdi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      animation: fadeUp 0.6s ease;
+    }
+
+    h2 {
+      border-left: 5px solid #2c5364;
+      padding-left: 10px;
+      color: #2c5364;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .job {
+      margin-bottom: 15px;
+    }
+
+    .job strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .job span {
+      font-size: 14px;
+      color: #777;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hover effect */
+    section:hover {
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+  </style>
 </head>
+
 <body>
 
+<header>
+  <h1>Imam Zainal Mahdi</h1>
+  <p>IT Support</p>
+</header>
+
 <div class="container">
-    <h1>Imam Zainal Mahdi</h1>
-    <div class="role">IT Support</div>
 
+  <section>
+    <h2>Profil Singkat</h2>
     <p>
-        IT Support berpengalaman lebih dari 10 tahun dalam pengelolaan infrastruktur IT,
-        jaringan, perangkat operasional, serta manajemen aset IT di berbagai sektor usaha.
+      Profesional IT Support dengan pengalaman lebih dari 10 tahun dalam
+      pengelolaan perangkat IT, jaringan, serta dukungan operasional perusahaan
+      di berbagai industri.
     </p>
+  </section>
 
+  <section>
     <h2>Pengalaman Kerja</h2>
 
     <div class="job">
-        <div class="job-title">IT Support — UD. Sukridhana Abadi</div>
-        <div class="year">2013 – 2015</div>
-        <ul>
-            <li>Support perangkat IT kantor</li>
-            <li>Instalasi & perawatan komputer dan printer</li>
-            <li>Troubleshooting sistem harian</li>
-        </ul>
+      <strong>UD. Sukridhana Abadi – IT Support</strong>
+      <span>2013 – 2015</span>
     </div>
 
     <div class="job">
-        <div class="job-title">Head IT Manager — PT. Pulsa 21 Group</div>
-        <div class="year">2015 – 2021</div>
-        <ul>
-            <li>Manajemen aset IT perusahaan</li>
-            <li>Implementasi POS & jaringan toko</li>
-            <li>Monitoring sistem operasional</li>
-        </ul>
+      <strong>PT. Pulsa 21 Group – Head IT Manager</strong>
+      <span>2015 – 2021</span>
     </div>
 
     <div class="job">
-        <div class="job-title">IT Network — PT. Hartono Elektronika</div>
-        <div class="year">2022 – 2024</div>
-        <ul>
-            <li>Instalasi & maintenance jaringan</li>
-            <li>Troubleshooting LAN/WAN</li>
-        </ul>
+      <strong>PT. Hartono Elektronika – IT Network</strong>
+      <span>2022 – 2024</span>
     </div>
 
     <div class="job">
-        <div class="job-title">IT Support — Maison Feerie</div>
-        <div class="year">2024 – 2025</div>
-        <ul>
-            <li>Support POS Raptor & ESB</li>
-            <li>Instalasi CCTV & server</li>
-            <li>Support operasional IT harian</li>
-        </ul>
+      <strong>Maison Feerie (F&B Bakery) – IT Support</strong>
+      <span>2024 – 2025</span>
     </div>
+  </section>
 
-    <h2>Keahlian</h2>
+  <section>
+    <h2>Keahlian Utama</h2>
     <ul>
-        <li>Teknisi perangkat IT</li>
-        <li>Instalasi CCTV</li>
-        <li>Manajemen Aset IT</li>
-        <li>Server & IT Networking</li>
+      <li>Perawatan & instalasi komputer, laptop, POS (Raptor & ESB)</li>
+      <li>Instalasi CCTV & Server</li>
+      <li>Service printer, laptop, dan handphone operasional</li>
+      <li>Manajemen & inventaris aset IT</li>
+      <li>IT Networking</li>
     </ul>
+  </section>
 
-    <footer>
-        © 2025 Imam Zainal Mahdi
-    </footer>
 </div>
+
+<footer>
+  © 2025 – Imam Zainal Mahdi
+</footer>
 
 </body>
 </html>
